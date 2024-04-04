@@ -9,8 +9,8 @@ import {
 } from "@dnd-kit/core";
 import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
-import { Column } from "./components/Column/Column";
-import { Input } from "./components/Input/Input";
+import Column from "./components/Column/Column";
+import Input from "./components/Input/Input";
 
 import "./App.css";
 

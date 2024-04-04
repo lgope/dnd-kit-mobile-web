@@ -3,9 +3,9 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 
-import { Task } from "../Task/Task";
+import Task from "../Task/Task";
 
-export const Column = ({ tasks }) => {
+const Column = ({ tasks }) => {
   console.log({classPrefix });
   
   return (
@@ -18,3 +18,5 @@ export const Column = ({ tasks }) => {
     </div>
   );
 };
+
+export default Column;

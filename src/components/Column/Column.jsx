@@ -6,10 +6,9 @@ import {
 import Task from "../Task/Task";
 
 const Column = ({ tasks }) => {
-  console.log({classPrefix });
   
   return (
-    <div className="column">
+    <div className={`${classPrefix}-column`}>
       <SortableContext items={tasks} strategy={verticalListSortingStrategy}>
         {tasks.map((task) => (
           <Task key={task.id} id={task.id} title={task.title} />

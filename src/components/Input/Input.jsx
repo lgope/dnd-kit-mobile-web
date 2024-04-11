@@ -12,14 +12,14 @@ const Input = ({ onSubmit }) => {
   };
 
   return (
-    <div className="container">
+    <div className={`${classPrefix}-container`}>
       <input
-        className="input"
+        className={`${classPrefix}-input`}
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button onClick={handleSubmit} className="button">
+      <button className={`${classPrefix}-button`}  onClick={handleSubmit}>
         Add
       </button>
     </div>
